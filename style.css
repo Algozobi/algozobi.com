@@ -10,6 +10,7 @@
   }
 
 
+
 body {
     background-color: var(--base);
     color: var(--white)
@@ -20,20 +21,23 @@ body {
   grid-template-columns: auto auto auto;
 }
 
-.button {
-  background-color: var(--accent1);
-  border: 1px solid var(--black);
-  color: var(--black);
-  padding: auto;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10px;
-  height: 5vh;
-  width: 14vh;
-  cursor: pointer
+.logo_Neumorphism {
+  border-radius: 150px;
+  background: #55DBD7;
+  box-shadow: inset 28px 28px 32px #4fccc8,
+            inset -28px -28px 32px #5beae6;
+}
 
+.button_nm {
+  color: #bdfffd;
+  border: none;
+  height: 4vh;
+  width: 12vh;
+  cursor: pointer;
+  border-radius: 57px;
+  background: var(--base);
+  box-shadow:  5px 5px 24px #4ac2be,
+            -5px -5px 24px #83faf6;
 }
 
 .center {
