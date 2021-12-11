@@ -1,26 +1,43 @@
+/* Color variables */
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --base: #55DBD7;
+    --accent1: #DBC040;
+    --accent2: #8F7E31;
+    --accent3: #DB6BC4;
+    --accent4: #298F8B;
+  }
+
+
 body {
-    background-color: rgb(252, 154, 255);
-    color: white
+    background-color: var(--base);
+    color: var(--white)
 }
 
-h1 {
-    
+.grid_3columns {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-.round {
-    /* border: 2px solid red; */
-    border-radius: 200px;
-    box-shadow: 5px 5px 10px #000000;
+.button {
+  background-color: var(--accent1);
+  border: 1px solid var(--black);
+  color: var(--black);
+  padding: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  height: 5vh;
+  width: 14vh;
+  cursor: pointer
+
 }
 
 .center {
-    margin: auto;
-    margin-top:35vh;
-    width: 130px;
-}
-
-.test {
-    width:200px;
-    height:200px;
-    cursor: pointer;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
