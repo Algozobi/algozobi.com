@@ -13,7 +13,8 @@
 
 body {
     background-color: var(--base);
-    color: var(--white)
+    color: var(--white);
+    font-family: helvetica
 }
 
 .grid_3columns {
@@ -24,8 +25,8 @@ body {
 .logo_Neumorphism {
   border-radius: 150px;
   background: #55DBD7;
-  box-shadow: inset 28px 28px 32px #4fccc8,
-            inset -28px -28px 32px #5beae6;
+  box-shadow: inset 10px 10px 42px #5cbab7,
+            inset -10px -10px 42px #6ffffa;
 }
 
 .button_nm {

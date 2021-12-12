@@ -1,0 +1,27 @@
+/* Color variables */
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --base: #55DBD7;
+    --accent1: #DBC040;
+    --accent2: #8F7E31;
+    --accent3: #DB6BC4;
+    --accent4: #298F8B;
+    }
+
+body {
+    background-color: var(--accent3);
+    font-family: Helvetica
+}
+
+.circle_Neumorphism {
+    border-radius: 150px;
+    background: #55DBD7;
+    box-shadow: inset 10px 10px 42px #5cbab7,
+                inset -10px -10px 42px #6ffffa;
+    }
+
+.grid_3columns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    }
