@@ -14,14 +14,23 @@ body {
     font-family: Helvetica
 }
 
-.circle_Neumorphism {
+
+.logo_Neumorphism {
     border-radius: 150px;
-    background: #55DBD7;
-    box-shadow: inset 10px 10px 42px #5cbab7,
-                inset -10px -10px 42px #6ffffa;
+    background: #DB6BC4;
+    box-shadow: inset -2px -2px 8px #ff83e6,
+                inset 2px 2px 8px #ae529c;
+    }
+    
+.frame_Neumorphism {
+    border-radius: 50px;
+    background: #DB6BC4;
+    box-shadow: inset -2px -2px 8px #ff83e6,
+                inset 2px 2px 8px #ae529c;
     }
 
 .grid_3columns {
     display: grid;
     grid-template-columns: auto auto auto;
     }
+
