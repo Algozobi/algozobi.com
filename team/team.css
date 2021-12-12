@@ -6,9 +6,7 @@
     --accent1: #DBC040;
     --accent2: #8F7E31;
     --accent3: #DB6BC4;
-    --accent4: #298f8c;
-    --shadow: #00000037;
-    --highlight: #ffffff23;
+    --accent4: #298F8B;
 }
 
 body {
@@ -22,32 +20,13 @@ body {
     grid-template-columns: auto 40vh auto;
     column-gap: 8vh
 }
-.grid_3columns {
-    display: grid;
-    grid-template-columns: 20vh auto 20vh;
-    column-gap: 8vh
-}
-.grid_2columns {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 8vh
-}
 
 .logo_Neumorphism {
     border-radius: 150px;
-    background: var(--base);
-    box-shadow: inset 10px 10px 42px var(--shadow),
-                inset -10px -10px 42px var(--highlight);
+    background: #55DBD7;
+    box-shadow: inset 10px 10px 42px #5cbab7,
+                inset -10px -10px 42px #6ffffa;
 }
-
-.frame_Neumorphism {
-    padding: 10px 15px 10px 15px;
-    margin: 20px 0 20px 0;
-    border-radius: 20px;
-    background: var(--base);
-    box-shadow: inset -2px -2px 8px var(--highlight),
-                inset 2px 2px 8px var(--shadow);
-    }
 
 .button_nm {
     color: #bdfffd;
@@ -57,8 +36,8 @@ body {
     cursor: pointer;
     border-radius: 57px;
     background: var(--base);
-    box-shadow:  1px 1px 2px var(--shadow),
-            -1px -1px 2px var(--highlight);
+    box-shadow:  5px 5px 24px #4ac2be,
+                -5px -5px 24px #83faf6;
 }
 
 .center {
