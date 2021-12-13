@@ -1,48 +1,130 @@
-/* Color variables */
+/* Color variables ------------------ */
 :root {
     --black: #000000;
-    --white: #FFFFFF;
-    --base: #55DBD7;
+    --white: #d9fffe;
+    --base: #55dbd7;
     --accent1: #DBC040;
     --accent2: #8F7E31;
     --accent3: #DB6BC4;
     --accent4: #298F8B;
+    --shadow: #5cbab7;
+    --highlight: #6ffffa;
+    --in: #85fffba8;
+    --out: #55dbd7;
   }
 
-
-
+/* Standards elements --------------- */
 body {
     background-color: var(--base);
     color: var(--white);
-    font-family: helvetica
+    font-family: helvetica;
+    max-width: 80vh;
+    margin: auto;
+  }
+  
+header {
+  height: 8vh;
 }
 
+a:link {
+  color: var(--accent1);
+  text-decoration: none
+}
+a:visited {
+  color: var(--accent2);
+}
+p {
+  font-size: 1em;
+  padding: 20px;
+  text-align: justify;
+}
+
+
+/* Layout -------------------------- */
 .grid_3columns {
   display: grid;
   grid-template-columns: auto auto auto;
-}
-
-.logo_Neumorphism {
-  border-radius: 150px;
-  background: #55DBD7;
-  box-shadow: inset 10px 10px 42px #5cbab7,
-            inset -10px -10px 42px #6ffffa;
-}
-
-.button_nm {
-  color: #bdfffd;
-  border: none;
-  height: 30px;
-  width: 10vh;
-  cursor: pointer;
-  border-radius: 57px;
-  background: var(--base);
-  box-shadow:  5px 5px 24px #4ac2be,
-            -5px -5px 24px #83faf6;
 }
 
 .center {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+}
+
+.standard_margin {
+  margin: 30px 30px 0 30px;
+  border-radius: 30px;
+}
+
+#button_container {
+
+}
+
+#algozobi_logo {
+  border-radius: 12px;
+}
+
+@keyframes breathing {
+  0% {box-shadow: inset 0px 0px 4px var(--in)}
+  10% {box-shadow: inset 0px 0px 4px var(--in)}
+  50% {box-shadow: inset 0px 0px 60px var(--in)}
+  900% {box-shadow: inset 0px 0px 4px var(--in)}
+  100% {box-shadow: inset 0px 0px 4px var(--in)}
+} 
+
+#zobialgo {
+  border-radius: 150px;
+  animation-name: breathing;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#about_text {
+  margin: 10px;
+  border-radius: 12px;
+  text-align: center
+}
+#about_text_links {
+  text-decoration: none;
+  
+}
+
+/* Neumorphism Styling ------------- */
+.down_nm {
+  background: var(--base);
+  box-shadow: inset 5px 8px 10px var(--shadow),
+            inset -5px -5px 10px var(--highlight);
+}
+.up_nm {
+  background: var(--base);
+  box-shadow:  5px 5px 14px var(--shadow),
+            -5px -5px 14px var(--highlight);
+}
+
+/* Buttons -------------------------- */
+.button_nm {
+  color: #13807c;
+  border: 0.5px solid #68dad6  ;
+  height: 10vh;
+  width: 10vh;
+  cursor: pointer;
+  border-radius: 57px;
+  background: var(--base);
+  box-shadow:  5px 5px 14px var(--shadow),
+            -5px -5px 14px var(--highlight);
+}
+
+.icon_btn {
+  width: 6vh; 
+  height: 6vh; 
+  display: block; 
+  position: relative; 
+  margin: auto
+}
+
+/* Hide/Reveal Elements ------------- */
+.hide {
+  display: none
 }

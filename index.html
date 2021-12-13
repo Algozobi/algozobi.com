@@ -1,47 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
+<!-- LInks ---------------------------------------------------->
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="./img/algozobi_logo.png">
-    <title>Algozobi</title>
+    <link rel="icon" type="image/x-icon" href="./img/algozobi_logo/icon_transparant_bg.png">
+    <title>ALGOZOBI</title>
+<!-- LInks ---------------------------------------------------->
 </head>
 <body>
-    <header style="height: 100px"></header>
-    <div id="" class="grid_3columns">
+    <header></header>
+    
+    <!-- Logo sqare  ------------------------------------------>
+    <div id="" class="grid_3columns">   
+        
         <div></div>
         <div style="text-align:center" >
-            <img class="logo_Neumorphism" src="./img/algozobi_logo/logo_transparant_bg.png" width="auto" height="250px">
+            <a href="./index.html">
+                <img id="algozobi_logo" class="down_nm" src="./img/algozobi_logo/logo_transparant_bg.png" width="auto" height="250px">
+            </a>
         </div>
         <div></div>
     </div>
+
+    <div id="" class="grid_3columns, hide">   
+        
+        <div></div>
+        <div style="text-align:center" >
+            <img id="zobialgo" class="down_nm" src="./img/algozobi_logo/logo_transparant_bg.png" width="auto" height="250px">
+        </div>
+        <div></div>
+    </div>
+    <!-- Logo sqare  ------------------------------------------>
+
+    <!-- Landing page buttons  -------------------------------->
     <div id="button_container" class="grid_3columns">
         <div></div>
         <div class="center" style="margin-top: 50px;">
             <a href="https://github.com/Algozobi" target="_blank" style="text-decoration: none; margin: 10px">
-                <button class="button_nm">
+                <button id="github_btn" class="button_nm">
                     Github
                 </button>
             </a>
-            <a href="./zobiverse/zobiverse.html" style="text-decoration: none; margin: 10px">
-                <button class="button_nm" style="color: rgb(162, 97, 0)">
+            <a href="./zobi.html" style="text-decoration: none; margin: 10px">
+                <button id="zobi_btn" class="button_nm" style="color: #a26100">
                     Zobi
                 </button>
             </a>
-            <a href="./team/team.html" style="text-decoration: none; margin: 10px">
-                <button class="button_nm">
+            <a style="text-decoration: none; margin: 10px">
+                <button id="bs_btn" class="button_nm">
                     BS
                 </button>
             </a>
         </div>
-        <div class="center"></div>
+        <div></div>
     </div>
+    <!-- Landing page buttons  -------------------------------->
+    
+    <!-- About text  ------------------------------------------>
+    <div id="bs_layer" class="grid_3columns, standard_margin, hide">
+        <div class=""></div>
+        <h3 style="margin-top: 20px; text-align:center">Back Story</h3>
+        <div id="about_text" class="down_nm" width="auto" height="250px" >
+            <p style="text-align: center; margin-bottom: -10px">
+                Algozobi was founded by
+            </p>
+            <a id="about_text_links" href="./founders/dadde.html">
+                <button class="button_nm" style="width: 220px;  height: 30px; margin-bottom: 15px;">
+                    Dadmehr Berahmandzadeh
+                </button>
+            </a>
+            <br>
+            <a id="about_text_links" href="./founders/kalle.html">
+                <button class="button_nm" style="width: 220px; height: 30px; margin-bottom: 5px">
+                    Karl-Fredrik Hagman
+                </button>
+                <a>
+            <p style="margin-top: -10px">
+                <b>Algozobi.com</b> started as a platform for presenting school projects in artificial intelligence and machine learning. The main goal of 
+                <b>Algozobi.com</b> is to represent who we are and what we are working on. <br>
+                <a href="./zobi.html"><i><b style="color:#ad1a69">Zobi Algo</b></i></a> is currently the main project that we are developing, which is an intelligent AI assistant. In the future Zobi Algo will be the face of our startup and have the ability to present project as an AI influencer. <br>
+                In the upcoming months we will be working on a
+                real time sign language detection using deep learning. 
+            </p>
+            <p style="text-align:center; margin-top: -40px; color:#ad1a69">
+                Follow us on
+            </p>
+            <div class="grid_3columns" style="margin: -20px 40px 30px 40px; padding-bottom: 20px;">
+                <a href="https://github.com/Algozobi">
+                    <Button class="button_nm">
+                        <img class="icon_btn" src="./img/icons/GitHub.png"  alt="">
+                    </Button> 
+                </a>
+                <div style="width: 1vh"></div>
+                <a href="https://discord.com/widget?id=914844894567227392&theme=dark">
+                    <Button class="button_nm">
+                        <img class="icon_btn" src="./img/icons/discord.svg"  alt="">
+                    </Button> 
+                </a>
+            </div>
+        </div>
+        <div class="" ></div>
+    </div>
+    <!-- About text ------------------------------------------->
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+</div>
+<script src="./app.js"></script>
 </body>
 </html>
