@@ -2,13 +2,14 @@
 :root {
     --black: #000000;
     --white: #d9fffe;
-    --base: #55dbd7;
+    --text: #ffffff;
+    --base: #50c7cf;
     --accent1: #DBC040;
     --accent2: #8F7E31;
     --accent3: #DB6BC4;
     --accent4: #298F8B;
-    --shadow: #5cbab7;
-    --highlight: #6ffffa;
+    --shadow: #3eabb3;
+    --highlight: #62e3ec;
     --in: #85fffba8;
     --out: #55dbd7;
   }
@@ -16,14 +17,23 @@
 /* Standards elements --------------- */
 body {
     background-color: var(--base);
-    color: var(--white);
+    color: var(--text);
     font-family: helvetica;
+
     max-width: 80vh;
     margin: auto;
   }
   
 header {
-  height: 8vh;
+  text-align: left;
+  height: 6vh;
+}
+
+footer {
+  margin: 25vh auto 0 auto;
+  position: fixed;
+  display: block;
+  text-align: center;
 }
 
 a:link {
@@ -36,7 +46,16 @@ a:visited {
 p {
   font-size: 1em;
   padding: 20px;
-  text-align: justify;
+  /* text-align: justify; */
+  /* text-shadow: 1px 1px 4px #1d9e9a; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* text-shadow: 1px 1px 4px #1d9e9a; */
+}
+
+li {
+  /* text-shadow: 1px 1px 4px #1d9e9a; */
 }
 
 
@@ -53,7 +72,7 @@ p {
 }
 
 .standard_margin {
-  margin: 30px 30px 0 30px;
+  margin: 30px;
   border-radius: 30px;
 }
 
@@ -91,6 +110,10 @@ p {
   
 }
 
+#zobi_quotes {
+  text-align: center
+}
+
 /* Neumorphism Styling ------------- */
 .down_nm {
   background: var(--base);
@@ -105,8 +128,8 @@ p {
 
 /* Buttons -------------------------- */
 .button_nm {
-  color: #13807c;
-  border: 0.5px solid #68dad6  ;
+  color: #0c6461;
+  border: 0.5px solid #68c9da  ;
   height: 10vh;
   width: 10vh;
   cursor: pointer;
@@ -128,3 +151,28 @@ p {
 .hide {
   display: none
 }
+
+.progress_window {
+  border-radius: 10px
+}
+
+.title_highlight {
+  text-align: left; 
+  margin: 0 0 0 20px; 
+  color:#ad1a69
+
+}
+
+/* #myProgress {
+  margin: 10px auto 10px auto;
+  width: 50vh;
+  background-color: var(--shadow);
+  border-radius: 20px
+}
+
+#myBar {
+  width: 10%;
+  height: 20px;
+  background-color: var(--highlight);
+  border-radius: inherit
+} */
