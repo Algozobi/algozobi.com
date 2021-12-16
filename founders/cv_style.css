@@ -1,0 +1,26 @@
+/* Color variables ------------------ */
+:root {
+    --black: #000000;
+    --white: #d9fffe;
+    --text: #ffffff;
+    --base: #53cbf0;
+    --accent1: #DBC040;
+    --accent2: #8F7E31;
+    --accent3: #DB6BC4;
+    --accent4: #298F8B;
+    --shadow: #4fb5d4;
+    --highlight: #80daf5;
+    --in: #85fffba8;
+    --out: #55dbd7;
+}
+
+.cv_down_nm {
+    background: var(--base);
+    box-shadow: inset 5px 8px 10px var(--shadow),
+                inset -5px -5px 10px var(--highlight);
+}
+.cv_up_nm {
+    background: var(--base);
+    box-shadow:  5px 5px 14px var(--shadow),
+                -5px -5px 14px var(--highlight);
+}
